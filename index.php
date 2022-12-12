@@ -15,7 +15,7 @@ foreach ($testCases as $caseName => $caseData) {
     extractOutputFromInput($input);
 }
 
-function extractOutputFromInput($horses)
+function extractOutputFromInput(array $horses): void
 {
     $minDiff = PHP_INT_MAX;
     sort($horses);
